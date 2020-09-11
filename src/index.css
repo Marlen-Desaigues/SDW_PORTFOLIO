@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  max-width: 100vw;
+  overflow-x: hidden;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -85,4 +87,127 @@ code {
 .flexRight {
   display: flex;
   justify-content: flex-end;
+}
+
+/* Navbar */
+.navbar {
+  width: 100vw;
+  background-color: #222222 ;
+  color: white;
+  display: flex;
+  padding: 0.5em;
+  font-size: 2em;
+}
+
+a.navbar-button {
+  color: white;
+  text-decoration: none;
+  margin: 0 0.5em;
+}
+
+.navbar-left {
+  flex: 1;
+  text-align: center;
+  color: orange;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navbar-right {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Header */
+.header {
+  width: 100vw;
+  height: 90vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.header h1 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 5em;
+  text-transform: uppercase;
+}
+
+.header p {
+  margin: 0 0 5em;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+.header button {
+  border: 2px solid white;
+  border-radius: 4px;
+  color: white;
+  background-color: rgba(0,0,0,0);
+  padding: 0.5em 1em;
+  cursor: pointer;
+  font-size: 1.3em;
+  transition: all 0.5s;
+}
+
+.header button:hover {
+  color: black;
+  background-color: white;
+}
+
+/* Container */
+.container {
+  background-color: #222222;
+  min-height: 20vh;
+  width: 100vw;
+  text-align: center;
+}
+
+/* Title */
+
+.title {
+  text-align: center;
+  padding: 5em;
+}
+
+.title h1 {
+  color: orange;
+  text-transform: uppercase;
+  font-size: 3em;
+  margin: 0;
+}
+
+.title p {
+  color: white;
+  font-size: 1.2em;
+}
+
+/* Skill */
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.skill img {
+  width: 5em;
+}
+
+.skill h3 {
+  color: orange;
+  font-weight: bold;
+}
+
+.skill p {
+  color: white;
 }
